@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Interactive Photo Gallery</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">        
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="banner">Dog Breeds</h1>
+
+            <div class="searchBar">
+                <input type="search" id="search" name="search" onkeyup="filter()">
+            </div>
+        </header>
+        <div class="wrapper">
+            <ul id="imageGallery">
+                <li class='standard'><a href="img/Affenpinscher.jpg"><img src="img/Affenpinscher.jpg" alt="Affenpinscher"></a></li>
+                <li class='standard'><a href="img/AiredaleTerrier.jpg"><img src="img/AiredaleTerrier.jpg" alt="Airedale Terrier"></a></li>
+                <li class='standard'><a href="img/Akita.jpg"><img src="img/Akita.jpg" alt="Akita"></a></li>
+                <li class='standard'><a href="img/AlaskanMalamute.jpg"><img src="img/AlaskanMalamute.jpg" alt="Alaskan Malamute"></a></li>
+                <li class='standard'><a href="img/AustralianShepherd.jpg"><img src="img/AustralianShepherd.jpg" alt="Australian Shepherd"></a></li>
+                <li class='standard'><a href="img/BassetHound.jpg"><img src="img/BassetHound.jpg" alt="Basset Hound"></a></li>
+                <li class='standard'><a href="img/Beagle.jpg"><img src="img/Beagle.jpg" alt="Beagle"></a></li>
+                <li class='standard'><a href="img/BerneseMountainDog.jpg"><img src="img/BerneseMountainDog.jpg" alt="Bernese Mountain Dog"></a></li>
+                <li class='standard'><a href="img/BichonFrise.jpg"><img src="img/BichonFrise.jpg" alt="Bichon Frise"></a></li>
+                <li class='standard'><a href="img/BorderCollie.jpg"><img src="img/BorderCollie.jpg" alt="Border Collie"></a></li>
+                <li class='standard'><a href="img/BostonTerrier.jpg"><img src="img/BostonTerrier.jpg" alt="Boston Terrier"></a></li>
+                <li class='standard'><a href="img/Boxer.jpg"><img src="img/Boxer.jpg" alt="Boxer"></a></li>
+                <li class='standard'><a href="img/Bulldog.jpg"><img src="img/Bulldog.jpg" alt="Bulldog"></a></li>
+                <li class='standard'><a href="img/Bullmastiff.jpg"><img src="img/Bullmastiff.jpg" alt="Bullmastiff"></a></li>
+                <li class='standard'><a href="img/BullTerrier.jpg"><img src="img/BullTerrier.jpg" alt="Bull Terrier"></a></li>
+                <li class='standard'><a href="img/CardiganWelshCorgi.jpg"><img src="img/CardiganWelshCorgi.jpg" alt="Cardigan Welsh Corgi"></a></li>
+                <li class='standard'><a href="img/CavalierKingCharlesSpaniel.jpg"><img src="img/CavalierKingCharlesSpaniel.jpg" alt="Cavalier King Charles Spaniel"></a></li>
+                <li class='standard'><a href="img/Chihuahua.jpg"><img src="img/Chihuahua.jpg" alt="Chihuahua"></a></li>
+                <li class='standard'><a href="img/ChowChow.jpg"><img src="img/ChowChow.jpg" alt="Chow Chow"></a></li>
+                <li class='standard'><a href="img/Dachshund.jpg"><img src="img/Dachshund.jpg" alt="Dachshund"></a></li>
+                <li class='standard'><a href="img/DobermanPinscher.jpg"><img src="img/DobermanPinscher.jpg" alt="Doberman Pinscher"></a></li>
+                <li class='standard'><a href="img/EnglishMastiff.jpg"><img src="img/EnglishMastiff.jpg" alt="English Mastiff"></a></li>
+                <li class='standard'><a href="img/FrenchBulldog.jpg"><img src="img/FrenchBulldog.jpg" alt="French Bulldog"></a></li>
+                <li class='standard'><a href="img/GermanShepherd.jpg"><img src="img/GermanShepherd.jpg" alt="German Shepherd"></a></li>
+                <li class='standard'><a href="img/GoldenRetriever.jpg"><img src="img/GoldenRetriever.jpg" alt="Golden Retriever"></a></li>
+                <li class='standard'><a href="img/GreatDane.jpg"><img src="img/GreatDane.jpg" alt="Great Dane"></a></li>
+                <li class='standard'><a href="img/GreatPyrenees.jpg"><img src="img/GreatPyrenees.jpg" alt="Great Pyrenees"></a></li>
+                <li class='standard'><a href="img/Greyhound.jpg"><img src="img/Greyhound.jpg" alt="Greyhound"></a></li>
+                <li class='standard'><a href="img/LabradorRetriever.jpg"><img src="img/LabradorRetriever.jpg" alt="Labrador Retriever"></a></li>
+                <li class='standard'><a href="img/LhasaApso.jpg"><img src="img/LhasaApso.jpg" alt="Lhasa Apso"></a></li>
+                <li class='standard'><a href="img/MalinoisDog.jpg"><img src="img/MalinoisDog.jpg" alt="Malinois Dog"></a></li>
+                <li class='standard'><a href="img/MalteseDog.jpg"><img src="img/MalteseDog.jpg" alt="Maltese Dog"></a></li>
+                <li class='standard'><a href="img/NewfoundlandDog.jpg"><img src="img/NewfoundlandDog.jpg" alt="Newfoundland Dog"></a></li>
+                <li class='standard'><a href="img/NorwichTerrier.jpg"><img src="img/NorwichTerrier.jpg" alt="Norwich Terrier"></a></li>
+                <li class='standard'><a href="img/OldEnglishSheepdog.jpg"><img src="img/OldEnglishSheepdog.jpg" alt="Old English Sheepdog"></a></li>
+                <li class='standard'><a href="img/Pekingese.jpg"><img src="img/Pekingese.jpg" alt="Pekingese"></a></li>
+                <li class='standard'><a href="img/Pointer.jpg"><img src="img/Pointer.jpg" alt="Pointer"></a></li>
+                <li class='standard'><a href="img/PomeranianDog.jpg"><img src="img/PomeranianDog.jpg" alt="Pomeranian Dog"></a></li>
+                <li class='standard'><a href="img/Poodle.jpg"><img src="img/Poodle.jpg" alt="Poodle"></a></li>
+                <li class='standard'><a href="img/Pug.jpg"><img src="img/Pug.jpg" alt="Pug"></a></li>
+                <li class='standard'><a href="img/Rottweiler.jpg"><img src="img/Rottweiler.jpg" alt="Rottweiler"></a></li>
+                <li class='standard'><a href="img/Saluki.jpg"><img src="img/Saluki.jpg" alt="Saluki"></a></li>
+                <li class='standard'><a href="img/ShetlandSheepdog.jpg"><img src="img/ShetlandSheepdog.jpg" alt="Shetland Sheepdog"></a></li>
+                <li class='standard'><a href="img/ShihTzu.jpg"><img src="img/ShihTzu.jpg" alt="Shih Tzu"></a></li>
+                <li class='standard'><a href="img/SiberianHusky.jpg"><img src="img/SiberianHusky.jpg" alt="Siberian Husky"></a></li>
+                <li class='standard'><a href="img/StafforshireBullTerrier.jpg"><img src="img/StafforshireBullTerrier.jpg" alt="Stafforshire Bull Terrier"></a></li>
+                <li class='standard'><a href="img/StBernard.jpg"><img src="img/StBernard.jpg" alt="St Bernard"></a></li>
+                <li class='standard'><a href="img/Vizsla.jpg"><img src="img/Vizsla.jpg" alt="Vizsla"></a></li>
+                <li class='standard'><a href="img/YorkshireTerrier.jpg"><img src="img/YorkshireTerrier.jpg" alt="Yorkshire Terrier"></a></li>
+            </ul>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="https://twitter.com/JustinCant" class="social twitter">Twitter</a></li>
+                <li><a href="https://github.com/JustCant" class="social github">Github</a></li>
+            </ul>
+            <span>&copy; Justin Cantley 2017</span>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
