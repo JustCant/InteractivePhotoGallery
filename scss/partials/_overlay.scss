@@ -1,0 +1,60 @@
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+    
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: solid $baseLight 8px;
+    border-radius: 10%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 125px;
+    min-height: 125px;
+    max-width: 250px;
+    max-height: 250px;
+    transition: all 0.5s;
+   }
+    
+   .overlayButton {
+        position: absolute;
+        transform: scale(3);
+        color: white;
+        border: none;
+        background-color: rgba(255, 255, 255, 0); 
+        transform: translate(-50%, -50%) scale(3);
+    }
+    
+   #prev {
+        top: 50%;
+        left: 10%;       
+    }
+
+   #next {
+        top: 50%;
+        right: 10%;
+    }
+
+   #close {
+        top: 10%;
+        right: 10%;
+    }
+    
+   p {
+        font-weight: 800;
+        font-size: 1.5rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 70%;
+        left: 50%;
+        color: white;
+        width: 100%;
+    }
+}

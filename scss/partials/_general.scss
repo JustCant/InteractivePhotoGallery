@@ -1,0 +1,54 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    position: absolute;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    min-height: 100%;
+    background-color: $baseLightest;
+}
+
+.main-header {
+    padding: 5px 0;
+    width: 95%;
+    margin: 0 auto;
+    background-color: $baseLight;
+    border: solid $baseDark 2px;
+    border-top: none;
+}
+
+.banner {
+    margin: 0;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.searchBar {
+    margin: auto;
+    width: 100%;
+    min-width: 100px;
+    input {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        height: 2rem;
+        width: 80%;
+        max-width: 380px;
+        margin: 10px auto;
+        display: block;
+        background-color: #e0e0e0;
+        border-radius: 5%;
+    }
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}

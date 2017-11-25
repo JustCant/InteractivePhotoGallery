@@ -1,0 +1,5 @@
+$base: rgb(104, 220, 255);
+$baseComplement: complement($base);
+$baseLight: lighten($base, 20%);
+$baseLightest: lighten($base, 28%);
+$baseDark: darken($base, 20%);

@@ -1,0 +1,40 @@
+.hide {
+    display: none;
+}
+
+#imageGallery {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 63.2px;
+    
+    li {
+        width: 80%;
+        float: left;
+        list-style: none;
+        margin: 10px auto;
+        
+        .standard:nth-child(n + 1),
+        .show:nth-child(n + 1) {
+            clear: left;
+        }
+    }
+    
+    img {
+        display: block;
+        border: $baseComplement solid 3px;
+        border-radius: 10%;
+        width: 70%;
+        height: 70%;
+        max-width: 240px;
+        max-height: 240px;
+        margin: 0 auto;
+        transition: all 0.5s;
+        &:hover {
+            border-radius: 50%;
+        }
+    }
+    
+    li:nth-child(2n) img {
+        border-color: $base;
+    } 
+}
