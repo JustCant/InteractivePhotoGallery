@@ -1,4 +1,4 @@
-@media screen and (min-width: 660px) {   
+@media screen and (min-width: 660px) {       
     #overlay p {
         font-size: 2rem;
     }
@@ -8,7 +8,9 @@
         
         li {
             width: 50%;
-
+            
+            float: left;
+            
             .standard:nth-child(n + 1),
             .show:nth-child(n + 1) {
                 clear: none;
